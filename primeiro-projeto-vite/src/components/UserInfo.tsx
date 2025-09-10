@@ -1,6 +1,7 @@
 import { UserAge } from "./UserAge"
 import { UserEmail } from "./UserEmail"
 import { UserName } from "./UserName"
+import { UserRoles } from "./UserRoles"
 
 export const UserInfo = () => {
     return (
@@ -8,6 +9,7 @@ export const UserInfo = () => {
             <UserName />
             <UserEmail />
             <UserAge />
+            <UserRoles />
         </>
     )
 }
