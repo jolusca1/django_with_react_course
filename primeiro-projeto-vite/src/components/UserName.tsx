@@ -1,9 +1,10 @@
-export const UserName = () => {
-    let names = {nome1: 'João', nome2: 'Lucas'};
+type Props = {
+    name: string
+}
 
-    const formatName = (value: string) => value.toUpperCase()
+export const UserName = ({name} : Props) => {
 
     return (
-        <h4>Meu nome é: {names.nome1.toUpperCase()}!</h4>
+        <h4>Meu nome é: {name.toUpperCase()}!</h4>
     )
 }

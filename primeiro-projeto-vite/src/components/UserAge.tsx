@@ -1,5 +1,9 @@
-export const UserAge = () => {
+type Props = {
+    age: number
+}
+
+export const UserAge = ({age}: Props) => {
     return (
-        <h4>Minha idade é: 24</h4>
+        <h4>Minha idade é: {age}</h4>
     )
 }
